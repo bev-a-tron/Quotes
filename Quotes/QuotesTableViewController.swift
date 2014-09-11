@@ -10,8 +10,14 @@ import UIKit
 
 class QuotesTableViewController: UITableViewController {
 
+    private let quotes = Quote.allQuotes()
+    private let quoteCellIdentifier = "quoteCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.estimatedRowHeight = 89
+        tableView.rowHeight = UITableViewAutomaticDimension
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -39,15 +45,15 @@ class QuotesTableViewController: UITableViewController {
         return 0
     }
 
-    /*
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
 
-        // Configure the cell...
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(quoteCellIdentifier) as TwoLabelTableViewCell
 
+        let quote = quotes[indexPath.row]
+        cell.configure(headerText: quote.content, subheadText: quote.author)
+        
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
