@@ -16,6 +16,7 @@
 		6C9C210119C2043800AE939E /* QuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C210019C2043800AE939E /* QuotesTableViewController.swift */; };
 		6C9C210319C210C100AE939E /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C210219C210C100AE939E /* Quote.swift */; };
 		6C9C210919C2185C00AE939E /* TwoLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C210819C2185C00AE939E /* TwoLabelTableViewCell.swift */; };
+		6C9C210C19C21E7A00AE939E /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C210B19C21E7A00AE939E /* QuoteViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		6C9C210019C2043800AE939E /* QuotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesTableViewController.swift; sourceTree = "<group>"; };
 		6C9C210219C210C100AE939E /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		6C9C210819C2185C00AE939E /* TwoLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoLabelTableViewCell.swift; sourceTree = "<group>"; };
+		6C9C210B19C21E7A00AE939E /* QuoteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		6C9C20DD19C1883000AE939E /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
+				6C9C210A19C21E1A00AE939E /* ViewModel */,
 				6C9C210519C2173200AE939E /* Views */,
 				6C9C210419C210E400AE939E /* Models */,
 				6C9C20E019C1883000AE939E /* AppDelegate.swift */,
@@ -135,6 +138,14 @@
 				6C9C210819C2185C00AE939E /* TwoLabelTableViewCell.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		6C9C210A19C21E1A00AE939E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C9C210B19C21E7A00AE939E /* QuoteViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +251,7 @@
 				6C9C210319C210C100AE939E /* Quote.swift in Sources */,
 				6C9C20E319C1883000AE939E /* ViewController.swift in Sources */,
 				6C9C210919C2185C00AE939E /* TwoLabelTableViewCell.swift in Sources */,
+				6C9C210C19C21E7A00AE939E /* QuoteViewModel.swift in Sources */,
 				6C9C20E119C1883000AE939E /* AppDelegate.swift in Sources */,
 				6C9C210119C2043800AE939E /* QuotesTableViewController.swift in Sources */,
 			);
