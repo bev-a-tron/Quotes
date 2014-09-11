@@ -16,6 +16,8 @@ class QuotesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.hidesBarsOnSwipe = true
+        
         tableView.estimatedRowHeight = 89
         tableView.rowHeight = UITableViewAutomaticDimension
 

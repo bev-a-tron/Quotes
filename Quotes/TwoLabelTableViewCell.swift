@@ -13,7 +13,14 @@ class TwoLabelTableViewCell: UITableViewCell {
     @IBOutlet weak private var headerLabel: UILabel!
     @IBOutlet weak private var subheadLabel: UILabel!
     
-    func configure(#headerText: String, subheadText: String) {
+    func configure(#headerText: String, subheadText: String, textColor: UIColor = UIColor.blackColor()) {
+        
+        headerLabel.textColor = textColor
+        subheadLabel.textColor = textColor
+        
+        headerLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
+        subheadLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+
         headerLabel.text = headerText
         headerLabel.accessibilityLabel = headerText
         
